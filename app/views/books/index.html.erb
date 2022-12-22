@@ -2,12 +2,13 @@
 <% @book.each do |book| %>
 
 
-<span>Title<span>
-<span><p>Body</p></span>
+<h5>Title<h5>
+<%= book.title %>
+<h5>Body<h5>
+ <%= book.body %>
 
-<span><%= link_to book.title, book_path(book.id) %>
-</span>
-
-
+<%= link_to "show", book_path(book.id) %>
+<%= link_to "edit", edit_book_path(book.id) %>
+<%= link_to "destroy", book_path(book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
 
 <% end %>
