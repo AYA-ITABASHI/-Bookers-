@@ -60,3 +60,12 @@ body{
 .save-link{
   text-align:left;
 }
+
+.edit-bottom{
+  display:block;
+}
+
+.show-link{
+  display:flex;
+  
+}
